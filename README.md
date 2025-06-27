@@ -1,10 +1,12 @@
 # Git Playground
 ## Resource
-### How git rebase works
-![[https://www.youtube.com/watch?v=f1wnYdLEpgI]]
-### Difference between git merge, git cherry pick and git rebase
-![[https://www.youtube.com/watch?v=i657Bg_HAWI&t=30s]]
-![Difference](./imgs/01.png)
+### How git rebase works  
+[![How git rebase works](https://img.youtube.com/vi/f1wnYdLEpgI/0.jpg)](https://www.youtube.com/watch?v=f1wnYdLEpgI)
+
+### Difference between git merge, git cherry pick and git rebase  
+[![Difference between git merge, cherry-pick, and rebase](https://img.youtube.com/vi/i657Bg_HAWI/0.jpg)](https://www.youtube.com/watch?v=i657Bg_HAWI&t=30s)
+
+![Difference](/imgs/01.png)
 
 
 ### Git merge
@@ -12,7 +14,7 @@
 ## Git Graph
 ### git rebase
 Before
-![Before](./imgs/02.png)
+![Before](/imgs/02.png)
 
 <pre>
 ```
@@ -20,11 +22,11 @@ git rebase main
 </pre>
 
 After
-![After](./imgs/03.png)
+![After](/imgs/03.png)
 
 ### git merge
 Before
-![Before](./imgs/04.png)
+![Before](/imgs/04.png)
 
 <pre>
 ```
@@ -33,11 +35,11 @@ git merge my-cool-feature
 </pre>
 
 After
-![After](./imgs/05.png)
+![After](/imgs/05.png)
 
 ### git cherry pick [commit hash code]
 Before
-![Before](./imgs/06.png)
+![Before](/imgs/06.png)
 
 After
 <pre>
@@ -46,7 +48,7 @@ git checkout main
 git cherry-pick 0e9beab4
 </pre>
 
-![After](./imgs/07.png)
+![After](/imgs/07.png)
 
 ### ✅ Key Point: `git cherry-pick` does **not** create a merge relationship
 
