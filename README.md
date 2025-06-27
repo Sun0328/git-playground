@@ -21,13 +21,15 @@ After
 ![After](./imgs/03.png)
 
 ### git merge
+Before
 ![Before](./imgs/04.png)
-### After rebase main
 <pre>
 ```
-git merge main
+git checkout main
+git merge my-cool-feature
 </pre>
-![After](./imgs/03.png)
+After
+![After](./imgs/05.png)
 
 ### git cherry pick
 ![Before](./imgs/03.png)
