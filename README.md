@@ -32,11 +32,13 @@ After
 ![After](./imgs/05.png)
 
 ### git cherry pick
-![Before](./imgs/03.png)
+Before
+![Before](./imgs/06.png)
 ### After rebase main
 <pre>
 ```
-git merge main
+git checkout main
+git cherry-pick [hash code]
 </pre>
 ![After](./imgs/03.png)
 
