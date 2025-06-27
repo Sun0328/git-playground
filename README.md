@@ -5,3 +5,16 @@
 ### Difference between git merge, git cherry pick and git rebase
 ![[https://www.youtube.com/watch?v=i657Bg_HAWI&t=30s]]
 ![Difference](./imgs/01.png)
+
+
+### Git merge
+
+## Git Graph
+### Before
+![Before](./imgs/02.png)
+### After rebase main
+<pre>
+```
+git rebase main
+</pre>
+![After](./imgs/03.png)
