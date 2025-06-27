@@ -28,3 +28,12 @@ After
 git merge main
 </pre>
 ![After](./imgs/03.png)
+
+### git cherry pick
+![Before](./imgs/04.png)
+### After rebase main
+<pre>
+```
+git merge main
+</pre>
+![After](./imgs/03.png)
