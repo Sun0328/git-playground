@@ -10,11 +10,21 @@
 ### Git merge
 
 ## Git Graph
-### Before
+### git rebase
+Before
 ![Before](./imgs/02.png)
-### After rebase main
 <pre>
 ```
 git rebase main
+</pre>
+After
+![After](./imgs/03.png)
+
+### git merge
+![Before](./imgs/04.png)
+### After rebase main
+<pre>
+```
+git merge main
 </pre>
 ![After](./imgs/03.png)
