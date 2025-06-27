@@ -84,3 +84,62 @@ git checkout main
 git merge my-cool-feature
 </pre>
 🟢 Use case: Your feature is complete and ready to be merged into main.
+
+## ✅ Push to GitHub
+
+If your local branch is `main`:
+
+<pre>
+git push -u origin main
+</pre>
+
+If you're on a different branch (e.g., master or any other):
+<pre>
+git push -u origin your-branch-name
+</pre>
+
+### ✅ Pull from GitHub
+
+To fetch the latest changes from the remote repository and merge them into your current branch:
+
+<pre>
+git pull origin main
+</pre>
+
+Replace main with your branch name if you're working on a different branch:
+<pre>
+git pull origin your-branch-name
+</pre>
+
+### ✅ What is `git pull --rebase`?
+
+By default, `git pull` performs:
+
+<pre>
+git fetch origin
+git merge origin/main
+</pre>
+This can create a merge commit, leading to a messy commit history with unnecessary branches.
+### Graph
+🧪 git pull (merge):
+A---B---C (origin/main)
+     \
+      D---E (local)
+After pull:
+A---B---C-------F (merge commit)
+     \       /
+      D---E
+
+🔄 git pull --rebase does:
+<pre>
+git fetch origin
+git rebase origin/main
+</pre>
+It re-applies your local commits on top of the latest remote commits, keeping the history linear and clean.
+
+### Graph
+🔁 git pull --rebase:
+A---B---C (origin/main)
+             \
+              D'---E' (rebased)
+Your local commits are replayed on top of the latest remote history.
