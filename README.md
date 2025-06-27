@@ -33,7 +33,7 @@ git merge my-cool-feature
 ![After](/imgs/05.png)
 
 ### git cherry pick [commit hash code]
-**Before**
+**Before**<br>
 ![Before](/imgs/06.png)
 
 <pre>
@@ -41,7 +41,7 @@ git checkout main
 git cherry-pick 0e9beab4
 </pre>
 
-**After**
+**After**<br>
 ![After](/imgs/07.png)
 
 ### ✅ Key Point: `git cherry-pick` does **not** create a merge relationship
@@ -107,9 +107,9 @@ Replace main with your branch name if you're working on a different branch:
 git pull origin your-branch-name
 </pre>
 
-### ✅ What is `git pull --rebase`?
+# ✅ What is `git pull --rebase`?
 
-By default, `git pull` performs:
+## By default, `git pull` performs:
 
 <pre>
 git fetch origin
@@ -117,16 +117,17 @@ git merge origin/main
 </pre>
 This can create a merge commit, leading to a messy commit history with unnecessary branches.
 ### Graph
-🧪 git pull (merge):
+🧪 git pull (merge):<br>
 A---B---C (origin/main)
-     \
-      D---E (local)
-After pull:
-A---B---C-------F (merge commit)
-     \       /
-      D---E
 
-🔄 git pull --rebase does:
+D---E (local)
+
+After pull:<br>
+A---B---C-------F (merge commit)<br>
+\ /<br>
+D---E
+
+## 🔄 git pull --rebase does:
 <pre>
 git fetch origin
 git rebase origin/main
@@ -134,8 +135,8 @@ git rebase origin/main
 It re-applies your local commits on top of the latest remote commits, keeping the history linear and clean.
 
 ### Graph
-🔁 git pull --rebase:
+#### 🔁 git pull --rebase:
 A---B---C (origin/main)
-             \
-              D'---E' (rebased)
+
+D'---E' (rebased)
 Your local commits are replayed on top of the latest remote history.
