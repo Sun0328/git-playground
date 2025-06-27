@@ -8,46 +8,40 @@
 
 ![Difference](/imgs/01.png)
 
-
-### Git merge
-
 ## Git Graph
 ### git rebase
-Before
+**Before**
 ![Before](/imgs/02.png)
 
 <pre>
-```
 git rebase main
 </pre>
 
-After
+**After**
 ![After](/imgs/03.png)
 
 ### git merge
-Before
+**Before**
 ![Before](/imgs/04.png)
 
 <pre>
-```
 git checkout main
 git merge my-cool-feature
 </pre>
 
-After
+**After**
 ![After](/imgs/05.png)
 
 ### git cherry pick [commit hash code]
-Before
+**Before**
 ![Before](/imgs/06.png)
 
-After
 <pre>
-```
 git checkout main
 git cherry-pick 0e9beab4
 </pre>
 
+**After**
 ![After](/imgs/07.png)
 
 ### ✅ Key Point: `git cherry-pick` does **not** create a merge relationship
@@ -63,7 +57,7 @@ git cherry-pick 0e9beab4
   but there is **no visual connection** to the original branch.
 
 
-## Easy mistake!!!
+## 🙅 Easy mistake!!!
 ### git merge main vs git merge my-cool-feature
 The difference lies in which branch you're currently on and which branch you're merging into it.
 
@@ -100,7 +94,7 @@ If you're on a different branch (e.g., master or any other):
 git push -u origin your-branch-name
 </pre>
 
-### ✅ Pull from GitHub
+## ✅ Pull from GitHub
 
 To fetch the latest changes from the remote repository and merge them into your current branch:
 
