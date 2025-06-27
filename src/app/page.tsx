@@ -41,7 +41,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Keep learning
+          Keep learning!!!
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
